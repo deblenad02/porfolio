@@ -1,106 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deblena Das | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deblena Das - Portfolio</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
+    
+    <header class="header">
+        <nav class="nav-container">
+            <div class="nav-content">
+                <span class="nav-logo">Deblena Das</span>
+                <div class="nav-links">
+                    <div class="nav-indicator"></div>
+                    <button class="nav-link active" data-target="about">About</button>
+                    <button class="nav-link" data-target="projects">Projects</button>
+                    <button class="nav-link" data-target="skills">Skills</button>
+                    <button class="nav-link" data-target="education">Education</button>
+                    <button class="nav-link" data-target="achievements">Achievements</button>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <!-- Navigation -->
-  <nav id="navbar">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <main class="main-content container">
 
-  <!-- Header Section -->
-<header class="header-flex">
-  <div class="profile-pic">
-    <img src="profile.jpg" alt="Deblena Das">
-  </div>
-  <div class="intro-text">
-    <h1>Deblena Das</h1>
-    <p>I'm currently pursuing my Master's in Software Engineering and Digital Transformation, looking for a 6-month end-of-study internship starting February or March 2026.</p>
-    <div class="buttons">
-      <a href="https://github.com/deblenad02" target="_blank" class="btn">GitHub</a>
-      <a href="https://linkedin.com/in/deblena-das-82b58a364" target="_blank" class="btn">LinkedIn</a>
-      <a href="DeblenaDas_CV_Internship25.pdf" download class="btn">Download CV</a>
-    </div>
-  </div>
-</header>
+        <section id="about" class="hero-section">
+            <div class="hero-bg-orb orb-1"></div>
+            <div class="hero-bg-orb orb-2"></div>
+            <div class="hero-grid">
+                
+                <div class="hero-image-container">
+                    <div>
+                        <div class="profile-glow-ring pulse"></div>
+                        <div class="profile-glow-static"></div>
+                        <img src="profile.jpg" alt="Deblena Das" class="profile-image"> 
+                        <div class="profile-decoration deco-1"></div>
+                        <div class="profile-decoration deco-2"></div>
+                    </div>
+                </div>
+                
+                <div class="hero-info">
+                    <h1 class="hero-title">Deblena Das</h1>
+                    <h2 class="hero-subtitle">Software Engineer & Digital Transformation Master Student</h2>
+                    
+                    <div class="contact-info">
+                        <a href="mailto:deblenad02@gmail.com" class="contact-item">
+                            <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                            deblenad02@gmail.com
+                        </a>
+                        <a href="tel:+33782808921" class="contact-item">
+                            <span class="contact-icon"><i class="fas fa-phone"></i></span>
+                            +33 (0)7 82 80 89 21
+                        </a>
+                        <span class="contact-item">
+                            <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                            Rouen, France
+                        </span>
+                        <a href="https://linkedin.com/in/deblena-das-82b58a364" class="contact-item" target="_blank">
+                            <span class="contact-icon"><i class="fab fa-linkedin"></i></span>
+                            linkedin.com/in/deblena-das-82b58a364
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
 
+        <section id="about-me-detail" class="section about-detail-section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-detail-card">
+                <p>
+                    I'm currently pursuing my Master's in Software Engineering and Digital Transformation, looking for a 6-month end-of-study internship starting February or March 2026. I'm passionate about AI, web development, and creating interactive, user-friendly applications. I love learning new technologies and applying them to real-world problems.
+                </p>
+            </div>
+        </section>
 
-  <!-- About Section -->
-  <section id="about" class="colored-section">
-    <h2>About Me</h2>
-    <p>I am a master’s student at ESIGELEC, Rouen, passionate about AI, web development, and creating interactive, user-friendly applications. I love learning new technologies and applying them to real-world problems.</p>
-  </section>
+        <section id="projects" class="section">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-info">
+                            <h3 class="project-title">TicTacToe AI Streamlit App</h3>
+                            <p class="project-date">06/2025</p>
+                        </div>
+                        <i class="fas fa-chevron-down project-chevron"></i>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">Developed an interactive grid-based game interface using ipywidgets in Jupyter Notebook for rapid prototyping and visualization. Recreated the application in Streamlit to deploy it as a user-friendly web app with a clean browser-based UI.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span><span class="tag">Streamlit</span><span class="tag">AI</span><span class="tag">Jupyter</span>
+                        </div>
+                        <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+                    </div>
+                </div>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul class="projects-list">
-      <li><strong>TicTacToe AI Streamlit App (06/2025)</strong> – Browser-based AI game. <a href="https://github.com/deblenad02/TicTacToe" target="_blank">GitHub</a></li>
-      <li><strong>Hangman Game with C#.Net (05/2025)</strong> – Interactive GUI in Visual Studio</li>
-      <li><strong>Study Pulse Android App (04/2025)</strong> – Personalized quiz app. <a href="https://github.com/deblenad02/StudyPulseMobileApp" target="_blank">GitHub</a></li>
-      <li><strong>Car Insurance Claim Prediction (04/2025)</strong> – Python ML models</li>
-      <li><strong>Web Development using J2EE (03/2025)</strong> – Servlets, JSP, MySQL, Tomcat</li>
-      <li><strong>Potato Leaf Disease Detection (03/2024)</strong> – CNN-based deep learning</li>
-    </ul>
-  </section>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-info">
+                            <h3 class="project-title">Hangman Game with C#.Net</h3>
+                            <p class="project-date">05/2025</p>
+                        </div>
+                        <i class="fas fa-chevron-down project-chevron"></i>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">A visually interactive Hangman game built in Visual Studio using .NET framework to practice event-driven programming and GUI design.</p>
+                        <div class="project-tags">
+                            <span class="tag">C#</span><span class="tag">.NET</span><span class="tag">Visual Studio</span><span class="tag">GUI</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-info">
+                            <h3 class="project-title">Study Pulse Android App</h3>
+                            <p class="project-date">04/2025</p>
+                        </div>
+                        <i class="fas fa-chevron-down project-chevron"></i>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">Built Study Pulse, an Android quiz app using Kotlin and Java, featuring personalized habit assessments and a clean, interactive UI designed with XML layouts.</p>
+                        <div class="project-tags">
+                            <span class="tag">Kotlin</span><span class="tag">Java</span><span class="tag">Android</span><span class="tag">XML</span>
+                        </div>
+                        <a href="#" class="project-link" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-info">
+                            <h3 class="project-title">Car Insurance Claim Prediction</h3>
+                            <p class="project-date">04/2025</p>
+                        </div>
+                        <i class="fas fa-chevron-down project-chevron"></i>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">Used classification models to train and test dataset to determine if an insurance will be claimed.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span><span class="tag">Machine Learning</span><span class="tag">Classification</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-info">
+                            <h3 class="project-title">Web Development using J2EE</h3>
+                            <p class="project-date">03/2025</p>
+                        </div>
+                        <i class="fas fa-chevron-down project-chevron"></i>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">Used Servlets and JSP to design a website and was linked to MySQL database through JDBC which was run on Apache Tomcat Server.</p>
+                        <div class="project-tags">
+                            <span class="tag">J2EE</span><span class="tag">JSP</span><span class="tag">Servlets</span><span class="tag">MySQL</span><span class="tag">JDBC</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-info">
+                            <h3 class="project-title">Potato Leaf Disease Detection</h3>
+                            <p class="project-date">03/2024</p>
+                        </div>
+                        <i class="fas fa-chevron-down project-chevron"></i>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">A CNN-based approach for the prediction of potato leaf diseases using deep learning.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span><span class="tag">Deep Learning</span><span class="tag">CNN</span><span class="tag">Computer Vision</span>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- Skills Section -->
-  <section id="skills" class="colored-section">
-    <h2>Skills</h2>
-    <p><strong>Languages & Frameworks:</strong> C#/.Net, ASP.Net, JAVA, JavaScript, HTML, CSS, C++, JSP, J2EE, PHP, AngularJS, JQuery, Servlet, MySQL, SQL Server, Python</p>
-    <p><strong>Tools & Platforms:</strong> Cloud Computing, JDBC, UML, Power BI, XML, Oracle, Apache Tomcat, Visual Studio, Eclipse, Android Studio</p>
-    <p><strong>OS:</strong> Windows / Mac</p>
-  </section>
+            </div>
+        </section>
 
-  <!-- Education Section -->
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>Master in Science & Technology</strong>, Software Engineering & Digital Transformation, ESIGELEC, Rouen, France (02/2025 - Present), AVG-15.65/20</li>
-      <li><strong>B.Tech</strong>, Computer Science & Business Systems, Meghnad Saha Institute of Technology, Kolkata, India (11/2020 - 06/2024), GPA-9.51/10</li>
-    </ul>
-  </section>
+        
+        <section id="skills" class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+                
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C#/.Net</span><span class="skill-tag">ASP.Net</span><span class="skill-tag">JAVA</span><span class="skill-tag">JavaScript</span><span class="skill-tag">C++</span><span class="skill-tag">C</span><span class="skill-tag">Python</span><span class="skill-tag">PHP</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Web Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML</span><span class="skill-tag">CSS</span><span class="skill-tag">JSP</span><span class="skill-tag">J2EE</span><span class="skill-tag">AngularJS</span><span class="skill-tag">jQuery</span><span class="skill-tag">Servlet</span><span class="tag">XML</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span><span class="skill-tag">SQL Server</span><span class="skill-tag">Oracle</span><span class="skill-tag">JDBC</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Cloud Computing</span><span class="skill-tag">UML</span><span class="skill-tag">Power BI</span><span class="skill-tag">Apache Tomcat</span><span class="skill-tag">Git</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="skill-category-title">Operating Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Windows</span><span class="skill-tag">Mac</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="skill-category-title">IDEs</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Microsoft Visual Studio</span><span class="skill-tag">Eclipse</span><span class="skill-tag">Android Studio</span>
+                    </div>
+                </div>
 
-  <!-- Achievements Section -->
-  <section id="achievements" class="colored-section">
-    <h2>Achievements</h2>
-    <ul>
-      <li>Young Achiever Award - ESIGELEC (2025)</li>
-      <li>International Student Ambassador - ESIGELEC (2025)</li>
-    </ul>
-  </section>
+            </div>
+        </section>
+        
+        <section id="education" class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-container">
+                
+                <div class="education-card">
+                    <div class="education-header">
+                        <span class="education-icon"><i class="fas fa-graduation-cap"></i></span>
+                        <div class="education-info">
+                            <h3 class="education-degree">Master in Science & Technology</h3>
+                            <p class="education-specialization">Software Engineering and Digital Transformation</p>
+                            <p class="education-institution">École supérieure d'ingénieurs en génie électrique (ESIGELEC)</p>
+                            <div class="education-meta">
+                                <span>02/2025 - Present</span>
+                                <span>Rouen, France</span>
+                                <span class="education-grade">AVG - 15.65/20</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-card">
+                    <div class="education-header">
+                        <span class="education-icon"><i class="fas fa-graduation-cap"></i></span>
+                        <div class="education-info">
+                            <h3 class="education-degree">BTech - Computer Science and Business Systems</h3>
+                            <p class="education-institution">Meghnad Saha Institute of Technology</p>
+                            <div class="education-meta">
+                                <span>11/2020 - 06/2024</span>
+                                <span>Kolkata, India</span>
+                                <span class="education-grade">GPA - 9.51/10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:deblenad02@gmail.com">deblenad02@gmail.com</a></p>
-    <p>Phone: +33 07 82 80 89 21</p>
-    <p>Location: Rouen, France</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/deblena-das-82b58a364" target="_blank">linkedin.com/in/deblena-das-82b58a364</a></p>
-    <p>GitHub: <a href="https://github.com/deblenad02" target="_blank">github.com/deblenad02</a></p>
-  </section>
+        <section id="achievements" class="section">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid">
+                
+                <div class="achievement-card">
+                    <span class="achievement-icon"><i class="fas fa-trophy"></i></span>
+                    <div>
+                        <h3 class="achievement-title">Young Achiever Award</h3>
+                        <p class="achievement-org">ESIGELEC • 2025</p>
+                    </div>
+                </div>
+                
+                <div class="achievement-card">
+                    <span class="achievement-icon"><i class="fas fa-star"></i></span>
+                    <div>
+                        <h3 class="achievement-title">International Student Ambassador</h3>
+                        <p class="achievement-org">ESIGELEC • 2025</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
 
-  <!-- Back to Top Button -->
-  <button id="topBtn" title="Go to top">&#8679;</button>
+        <section class="section">
+            <div class="languages-interests-grid">
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon"><i class="fas fa-language"></i></span>
+                        <h3 class="card-title">Languages</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="language-item">
+                            <span class="language-name">English</span>
+                            <span class="language-level">Full Professional Proficiency</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">Hindi</span>
+                            <span class="language-level">Full Professional Proficiency</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">Bengali</span>
+                            <span class="language-level">Full Professional Proficiency</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">French</span>
+                            <span class="language-level">Elementary Proficiency</span>
+                        </div>
+                        <div class="language-item">
+                            <span class="language-name">Chinese</span>
+                            <span class="language-level">Elementary Proficiency</span>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Deblena Das | Rouen, France</p>
-  </footer>
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-icon"><i class="fas fa-heart"></i></span>
+                        <h3 class="card-title">Interests</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="interests-tags">
+                            <span class="interest-tag">Photography</span>
+                            <span class="interest-tag">Volunteering</span>
+                            <span class="interest-tag">Reading Tech Blogs</span>
+                            <span class="interest-tag">Hiking</span>
+                            <span class="interest-tag">Coding Challenges</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
 
-  <script src="script.js"></script>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Deblena Das. Crafted with CSS & JS.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+
 </body>
 </html>
