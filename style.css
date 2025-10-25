@@ -1,127 +1,172 @@
-/* Reset */
+/* ---------------------------- Reset ---------------------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
-  background: #f8f9fa;
-  color: #212529;
+  background: #e6f0ff; /* light blue with soft tone */
+  color: #000;
   line-height: 1.6;
   scroll-behavior: smooth;
 }
 
-/* Navbar */
+/* ---------------------------- Navigation ---------------------------- */
 nav {
   position: sticky;
   top: 0;
-  background: #007bff;
+  background: #4a90e2; /* professional blue */
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
+
 nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
 }
+
 nav ul li {
   margin: 0 15px;
 }
+
 nav ul li a {
-  color: #fff;
+  color: white;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: bold;
   padding: 15px;
   display: block;
   transition: 0.3s;
 }
+
 nav ul li a:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: #357ABD;
   border-radius: 5px;
 }
 
-/* Header */
-header {
-  text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(135deg, #007bff, #0056b3);
-  color: white;
-  position: relative;
+/* ---------------------------- Header ---------------------------- */
+.header-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 20px;
+  background: #cce0ff; /* light blue */
+  border-radius: 15px;
+  max-width: 1000px;
+  margin: 40px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-header img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  border: 4px solid #fff;
+/* Profile Picture */
+.header-flex .profile-pic img {
+  width: 150px;
+  height: 150px;
   object-fit: cover;
-  margin-bottom: 20px;
-  animation: fadeIn 1.5s ease-in-out;
+  border-radius: 50%;
+  border: 4px solid #4a90e2;
+  transition: transform 0.3s ease;
 }
 
-header h1 {
-  font-size: 2.8em;
-  margin-bottom: 10px;
-  animation: fadeInDown 1s ease;
-}
-header p {
-  font-size: 1.1em;
-  margin-bottom: 25px;
-  opacity: 0.9;
-}
-header .buttons .btn {
-  display: inline-block;
-  margin: 6px;
-  padding: 10px 22px;
-  background: white;
-  color: #007bff;
-  border-radius: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: 0.3s ease;
-}
-header .buttons .btn:hover {
-  background: #e2e6ea;
+.header-flex .profile-pic img:hover {
   transform: scale(1.05);
 }
 
-/* Sections */
+/* Intro Text */
+.header-flex .intro-text {
+  max-width: 650px;
+}
+
+.header-flex h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.header-flex p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+.header-flex .buttons .btn {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 20px;
+  background: #4a90e2;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.header-flex .buttons .btn:hover {
+  background: #357ABD;
+  transform: scale(1.05);
+}
+
+/* ---------------------------- Sections ---------------------------- */
 section {
   max-width: 900px;
-  margin: 50px auto;
+  margin: 40px auto;
   padding: 30px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  animation: fadeUp 0.8s ease forwards;
+  background: #f4f9ff; /* faded light blue */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.colored-section {
+  background: #d0e4ff; /* slightly different shade for differentiation */
+}
+
 section h2 {
-  color: #007bff;
+  color: #4a90e2;
   margin-bottom: 20px;
   font-size: 1.8em;
-  text-align: center;
 }
 
-/* List */
 section ul {
   list-style-type: disc;
-  margin-left: 25px;
+  margin-left: 20px;
 }
 
-/* Project hover */
+section li {
+  margin-bottom: 10px;
+}
+
+section a {
+  color: #4a90e2;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+section a:hover {
+  text-decoration: underline;
+  transform: scale(1.02);
+  display: inline-block;
+}
+
+/* Projects hover effect */
 .projects-list li {
   padding: 10px;
   transition: 0.3s;
   border-radius: 5px;
+  background: #e6f0ff;
 }
+
 .projects-list li:hover {
-  background: #e9f2ff;
+  background: #d0e4ff;
   transform: translateX(5px);
 }
 
-/* Footer */
+/* ---------------------------- Footer ---------------------------- */
 footer {
   text-align: center;
   padding: 20px;
@@ -132,7 +177,7 @@ footer {
   border-top: 1px solid #ddd;
 }
 
-/* Back to top button */
+/* ---------------------------- Back to top button ---------------------------- */
 #topBtn {
   display: none;
   position: fixed;
@@ -141,28 +186,28 @@ footer {
   z-index: 100;
   font-size: 18px;
   border: none;
-  background: #007bff;
+  outline: none;
+  background: #4a90e2;
   color: white;
   cursor: pointer;
   padding: 10px 15px;
   border-radius: 50%;
   transition: 0.3s;
 }
+
 #topBtn:hover {
-  background: #0056b3;
+  background: #357ABD;
   transform: scale(1.1);
 }
 
-/* Animations */
-@keyframes fadeInDown {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
+/* ---------------------------- Fade-in Animation ---------------------------- */
+.fade-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
 }
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(40px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
